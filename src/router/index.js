@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+import Home from '@/views/Home.vue';
+import Resume from '@/views/Resume.vue';
+
+import middleware from '@/router/middleware';
 
 Vue.use(VueRouter);
 
@@ -9,6 +12,17 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+    meta: {
+      title: 'bbrist',
+    },
+  },
+  {
+    path: '/resume',
+    name: 'Resume',
+    component: Resume,
+    meta: {
+      title: 'bbrist | Resume',
+    },
   },
   {
     path: '/about',
@@ -23,5 +37,7 @@ const routes = [
 const router = new VueRouter({
   routes,
 });
+
+middleware(router);
 
 export default router;
