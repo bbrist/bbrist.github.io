@@ -9,7 +9,10 @@
           <v-list-item-content v-else>
             <span>No Details</span>
           </v-list-item-content>
+          <slot name="content"></slot>
         </v-list-item-content>
+
+        <slot></slot>
 
         <v-list-item-avatar tile size="80" v-if="image">
           <v-img :src="image" />

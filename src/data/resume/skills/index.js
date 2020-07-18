@@ -51,7 +51,7 @@ export default [
   new Skill(Type.JAVASCRIPT, 0.85, js),
   new Skill(Type.HTMLCSS, 0.75, html),
   new Skill(Type.PHP, 0.85, php),
-  new Skill(Type.PYTHON, 0.60, python),
+  new Skill(Type.PYTHON, 0.40, python),
 
   // Frameworks
   new Skill(Type.SPRING, 1.00, spring),

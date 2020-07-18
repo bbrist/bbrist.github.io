@@ -65,7 +65,9 @@
         <v-row>
           <v-col cols="12" sm="6" md="4"
                  v-for="(skill, i) in skills" :key="i">
-            <skill :name="skill.name" :logo="skill.image" :category="skill.category" />
+            <skill :name="skill.name" :logo="skill.image" :category="skill.category"
+                   :rating="skill.level"
+                   :projects="skillExperience(skill)" />
           </v-col>
         </v-row>
       </v-container>
@@ -78,7 +80,8 @@
                  v-for="(project, i) in resume.projects" :key="i">
             <project :name="project.name"
                      :text="project.description"
-                     :details="project.details" />
+                     :details="project.details"
+                     :skills="project.skills" />
           </v-col>
         </v-row>
       </v-container>
@@ -127,6 +130,21 @@ export default {
           text: s.category,
           value: s.type.id,
         }));
+    },
+  },
+  methods: {
+    skillExperience(skill) {
+      const jobs = this.resume.experience.filter((e) => {
+        const { skills } = e;
+        const matches = skills.filter((s) => s.skill.key === skill.type.key);
+        return matches.length > 0;
+      }).map((e) => e.company);
+      const projects = this.resume.projects.filter((p) => {
+        const { skills } = p;
+        const matches = skills.filter((s) => s.skill.key === skill.type.key);
+        return matches.length > 0;
+      }).map((p) => p.name);
+      return jobs.concat(projects);
     },
   },
   data: () => ({

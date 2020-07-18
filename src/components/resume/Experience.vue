@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import DetailsModal from '@/components/resume/DetailsModal.vue';
+import SkillsModal from '@/components/resume/modal/SkillsModal.vue';
 
 export default {
   props: {
@@ -38,13 +38,15 @@ export default {
       type: Object,
       default: undefined,
     },
+    skills: Array,
   },
   methods: {
     show() {
-      this.$modal.open(DetailsModal, {
+      this.$modal.open(SkillsModal, {
         title: this.name,
         subtitle: this.text,
         details: this.details,
+        skills: this.skills,
       });
     },
   },
