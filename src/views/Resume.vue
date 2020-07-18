@@ -17,22 +17,22 @@
       <div style="margin: 0 10px;">
         <v-expansion-panels multiple tile>
           <expansion-section title="Background">
-            {{ resume.background }}
+            <div v-html="resume.background"></div>
           </expansion-section>
           <expansion-section title="Professional Interests">
-            {{ resume.interests }}
+            <div v-html="resume.interests"></div>
           </expansion-section>
           <!--<expansion-section title="Personal Philosophies">
 
           </expansion-section>-->
           <expansion-section title="Hobbies and Personal Interests">
-            {{ resume.hobbies }}
+            <div v-html="resume.hobbies"></div>
           </expansion-section>
           <expansion-section title="Education">
-            {{ resume.education }}
+            <div v-html="resume.education"></div>
           </expansion-section>
           <expansion-section title="Contact">
-            {{ resume.contact }}
+            <div v-html="resume.contact"></div>
           </expansion-section>
         </v-expansion-panels>
       </div>
@@ -65,8 +65,11 @@
         <v-row>
           <v-col cols="12" sm="6" md="4"
                  v-for="(skill, i) in skills" :key="i">
-            <skill :name="skill.name" :logo="skill.image" :category="skill.category"
+            <skill :name="skill.name"
+                   :logo="skill.image"
+                   :category="skill.category"
                    :rating="skill.level"
+                   :details="skill.details"
                    :projects="skillExperience(skill)" />
           </v-col>
         </v-row>
