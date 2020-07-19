@@ -1,1 +1,1 @@
-More details coming soon
+No Extra Details

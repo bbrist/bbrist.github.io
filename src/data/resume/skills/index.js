@@ -59,14 +59,14 @@ export default [
   new Skill(Type.LARAVEL, 0.90, laravel),
 
   // Database
-  new Skill(Type.SQL, 0.90, sql),
+  new Skill(Type.SQL, 0.75, sql),
   new Skill(Type.MONGO, 0.90, mongo),
   new Skill(Type.ELASTIC, 0.90, elastic),
 
   // Cloud
   new Skill(Type.DOCKER, 1.00, docker),
   new Skill(Type.AWS, 0.85, aws),
-  new Skill(Type.KAFKA, 0.90, kafka),
+  new Skill(Type.KAFKA, 0.75, kafka),
   new Skill(Type.JMS, 1.00, jms),
 
   // Methodologies

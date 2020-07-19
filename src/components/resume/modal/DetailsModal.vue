@@ -5,7 +5,7 @@
         <v-list-item-content>
           <v-list-item-title class="headline mb-1">{{ title }}</v-list-item-title>
           <v-list-item-subtitle>{{ subtitle }}</v-list-item-subtitle>
-          <v-list-item-content v-if="details" v-html="details" />
+          <v-list-item-content class="details" v-if="details" v-html="details" />
           <v-list-item-content v-else>
             <span>No Details</span>
           </v-list-item-content>
@@ -43,3 +43,11 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  .details {
+    & p {
+      margin-bottom: 10px !important;
+    }
+  }
+</style>

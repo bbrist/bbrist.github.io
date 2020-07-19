@@ -1,1 +1,1 @@
-More details coming soon
+My PHP experience is limited mostly to my Laravel experience.
