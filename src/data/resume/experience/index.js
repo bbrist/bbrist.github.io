@@ -26,13 +26,22 @@ export default [
     period: Date.period(2017),
     details: ngcmd,
     skills: [
-      new Skill(Type.JAVA, 0.80, [
-        'details',
-        'details',
-      ]),
-      new Skill(Type.JAVASCRIPT, 0.50, [
-        'details',
-      ]),
+      new Skill(Type.JAVA, 0.80, []),
+      new Skill(Type.JAVASCRIPT, 0.50, []),
+      new Skill(Type.ELASTIC, 0.80, []),
+      new Skill(Type.GIT, 1.00, []),
+      new Skill(Type.DESIGN, 0.80, []),
+      new Skill(Type.VUE, 0.20, []),
+      new Skill(Type.AGILE, 1.00, []),
+      new Skill(Type.MICROSERVICES, 1.00, []),
+      new Skill(Type.JMS, 1.00, []),
+      new Skill(Type.KAFKA, 0.50, []),
+      new Skill(Type.DOCKER, 1.00, []),
+      new Skill(Type.MONGO, 0.75, []),
+      new Skill(Type.SPRING, 1.00, []),
+      new Skill(Type.GITLABCI, 0.80, []),
+      new Skill(Type.JENKINS, 0.60, []),
+      new Skill(Type.TDD, 0.50, []),
     ],
   },
   {
@@ -42,9 +51,19 @@ export default [
     period: Date.period(2019),
     details: learn4funmd,
     skills: [
-      new Skill(Type.JAVA, 1.00, [
-        'details',
-      ]),
+      new Skill(Type.JAVA, 1.00, []),
+      new Skill(Type.DOCKER, 1.00, []),
+      new Skill(Type.MONGO, 0.50, []),
+      new Skill(Type.SPRING, 1.00, []),
+      new Skill(Type.GITLABCI, 1.00, []),
+      new Skill(Type.MICROSERVICES, 1.00, []),
+      new Skill(Type.AGILE, 0.50, []),
+      new Skill(Type.JAVASCRIPT, 0.75, []),
+      new Skill(Type.ELASTIC, 0.80, []),
+      new Skill(Type.GIT, 1.00, []),
+      new Skill(Type.DESIGN, 1.00, []),
+      new Skill(Type.VUE, 1.00, []),
+      new Skill(Type.AWS, 1.00, []),
     ],
   },
   {
@@ -54,9 +73,14 @@ export default [
     period: Date.period(2017, 2018),
     details: triveramd,
     skills: [
-      new Skill(Type.PHP, 0.90, [
-        'details',
-      ]),
+      new Skill(Type.PHP, 1.00, []),
+      new Skill(Type.LARAVEL, 1.00, []),
+      new Skill(Type.SQL, 1.00, []),
+      new Skill(Type.VUE, 1.00, []),
+      new Skill(Type.DESIGN, 1.00, []),
+      new Skill(Type.GIT, 1.00, []),
+      new Skill(Type.HTMLCSS, 1.00, []),
+      new Skill(Type.JAVASCRIPT, 1.00, []),
     ],
   },
   {
@@ -66,9 +90,8 @@ export default [
     period: Date.period(2017, 2017),
     details: harrismd,
     skills: [
-      new Skill(Type.CSHARP, 0.80, [
-        'details',
-      ]),
+      new Skill(Type.CSHARP, 1.00, []),
+      new Skill(Type.AGILE, 1.00, []),
     ],
   },
   {
@@ -79,6 +102,7 @@ export default [
     details: dodmd,
     skills: [
       new Skill(Type.PYTHON, 0.80, []),
+      new Skill(Type.HTMLCSS, 0.80, []),
       new Skill(Type.JAVASCRIPT, 0.80, []),
     ],
   },

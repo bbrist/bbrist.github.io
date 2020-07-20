@@ -1,6 +1,6 @@
 <template>
   <div class="chip-items">
-    <template v-if="items">
+    <template v-if="items && items.length > 0">
       <div>
         <v-chip v-for="(item, i) in items" :key="i" small>
           {{ item }}
@@ -8,7 +8,7 @@
       </div>
     </template>
     <template v-else>
-      <div>No Items</div>
+      <div style="font-weight: 300">No Items</div>
     </template>
   </div>
 </template>
@@ -28,6 +28,7 @@ export default {
 
     & .v-chip {
       margin-right: 5px;
+      margin-bottom: 5px;
     }
   }
 </style>
