@@ -126,7 +126,7 @@ export default {
     },
     skills() {
       const { skills } = this.resume;
-      return skills.sort((a, b) => a.rating - b.rating);
+      return skills.sort((a, b) => b.level - a.level);
     },
     skillCategories() {
       return this.resume.skills
