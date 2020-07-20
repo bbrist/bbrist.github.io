@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '@/views/Home.vue';
+// import Home from '@/views/Home.vue';
 import Resume from '@/views/Resume.vue';
 
 import middleware from '@/router/middleware';
@@ -11,10 +11,11 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
-    meta: {
-      title: 'bbrist',
-    },
+    redirect: '/resume',
+    // component: Home,
+    // meta: {
+    //   title: 'bbrist',
+  // },
   },
   {
     path: '/resume',

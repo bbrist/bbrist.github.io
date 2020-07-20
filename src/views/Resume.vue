@@ -125,7 +125,8 @@ export default {
       return this.$site.resume;
     },
     skills() {
-      return this.resume.skills;
+      const { skills } = this.resume;
+      return skills.sort((a, b) => a.rating - b.rating);
     },
     skillCategories() {
       return this.resume.skills
