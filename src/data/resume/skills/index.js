@@ -21,6 +21,10 @@ import jms from './jms.md';
 import agile from './agile.md';
 import microservices from './microservices.md';
 import git from './git.md';
+import design from './design.md';
+import gitlabci from './gitlabci.md';
+import jenkins from './jenkins.md';
+import tdd from './tdd.md';
 
 class Skill {
   constructor(type, level, details = []) {
@@ -71,9 +75,13 @@ export default [
 
   // Methodologies
   new Skill(Type.AGILE, 0.85, agile),
+  new Skill(Type.DESIGN, 0.90, design),
+  new Skill(Type.TDD, 0.75, tdd),
   new Skill(Type.MICROSERVICES, 0.90, microservices),
 
   // Tools
   new Skill(Type.GIT, 0.90, git),
+  new Skill(Type.GITLABCI, 0.90, gitlabci),
+  new Skill(Type.JENKINS, 0.50, jenkins),
 
 ];

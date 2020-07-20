@@ -18,6 +18,10 @@ import activemq from '@/assets/logos/skills/mq-01.png';
 import agile from '@/assets/logos/skills/agile-01.png';
 import microservices from '@/assets/logos/skills/microservices-01.png';
 import git from '@/assets/logos/skills/git-01.png';
+import design from '@/assets/logos/skills/design-01.png';
+import gitlabci from '@/assets/logos/skills/gitlabci-01.png';
+import tdd from '@/assets/logos/skills/tdd-01.png';
+import jenkins from '@/assets/logos/skills/jenkins-01.png';
 
 const Type = {
   LANGUAGE: 'language',
@@ -66,9 +70,13 @@ export default {
 
   // Methodologies
   AGILE: new Skill('agile', 'Agile', agile, Type.METHODOLOGY),
+  DESIGN: new Skill('design', 'Design', design, Type.METHODOLOGY),
+  TDD: new Skill('tdd', 'Test Driven Development', tdd, Type.METHODOLOGY),
   MICROSERVICES: new Skill('microservices', 'Microservices', microservices, Type.METHODOLOGY),
 
   // Tools
   GIT: new Skill('git', 'Git', git, Type.TOOL),
+  GITLABCI: new Skill('gitlabci', 'Gitlab CI', gitlabci, Type.TOOL),
+  JENKINS: new Skill('jenkins', 'Jenkins', jenkins, Type.TOOL),
 
 };
