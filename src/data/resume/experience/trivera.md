@@ -1,1 +1,1 @@
-More details coming soon
+I worked as a consultant and developer on a startup project to create a fantasy football application. The primary development team was based in Armenia and part of my role was to bridge the gap between the concepts of American Football (for the Armenians) and the technical details of the application (for the Management team). Additionally, I provided my professional opinions on various design methodologies and system architecture that could provide a positive impact to the direction and success of the application.
