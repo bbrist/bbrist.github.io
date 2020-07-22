@@ -1,1 +1,2 @@
-More details coming soon
+I was tasked with supporting a series of cloud-based mircoservices to process mission elements in realtime. During this time I've personally developed custom configurable frameworks to support new missions and limit the cost and time of development.
+Additionally, I've spent time working to modernize the existing tech stack with the inclusion of Docker and Kafka, and provide insight via operational metrics using Prometheus, Grafana, and Elasticsearch.
