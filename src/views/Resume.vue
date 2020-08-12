@@ -111,6 +111,8 @@ import Experience from '@/components/resume/Experience.vue';
 import ResumeSection from '@/components/resume/ResumeSection.vue';
 import ExpansionSection from '@/components/expansion/ExpansionSection.vue';
 
+// TODO: Add Grafana, Prometheus, Golang?
+
 // import info from '@/data';
 import scroll from '@/mixins/scroll';
 
