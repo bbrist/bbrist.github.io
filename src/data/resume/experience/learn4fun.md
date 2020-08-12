@@ -1,1 +1,1 @@
-More details coming soon
+Learn4Fun is an Irish startup of which I am both a stakeholder and lead developer. Learn4Fun's mission is to create an application for parents to have insight on the educational progress of their children. My role has been to design and develop the application from concept to production product.
